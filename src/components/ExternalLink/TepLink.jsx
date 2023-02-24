@@ -7,6 +7,7 @@ import Link from '../Link';
 
 import TEP_LINK_QUERY from './TepLinkQuery.gql';
 
+/*
 const useStyles = makeStyles(theme => ({
   helpIcon: {
     fontSize: '10px',
@@ -17,8 +18,10 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.primary,
   },
 }));
+*/
 
 function TepLink({ ensgId }) {
+  /*
   const classes = useStyles();
 
   const { loading, data } = useQuery(TEP_LINK_QUERY, {
@@ -64,6 +67,8 @@ function TepLink({ ensgId }) {
       </Link>
     </span>
   );
+  */
+  return (<span>TODO</span>);
 }
 
 export default TepLink;

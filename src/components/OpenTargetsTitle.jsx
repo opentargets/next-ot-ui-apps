@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
-import config from '../../config';
+import config from '../config';
 // import PartnerLockIcon from './PartnerLockIcon';
 
 const styles = () => ({

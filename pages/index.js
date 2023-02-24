@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          See the drugs page for ...
+          See the drugs page for <Link href="/drug/">METFORMIN</Link>
         </p>
         
         {/* <div className={styles.grid}>

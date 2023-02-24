@@ -23,14 +23,14 @@ export default function DrugPage() {
         <BasePage
           title={`${name || chemblId} profile page`}
           description={`Annotation information for ${name || chemblId}`}
-          location={location}
+          location={'location'} /* TODO: this should be a var, not string */
         >
-          <Header
+          {/* <Header
             loading={loading}
             chemblId={chemblId}
             name={name}
             crossReferences={crossReferences}
-          />
+          /> */}
           {/* <ScrollToTop /> */}
 
           {/* <RoutingTabs>
