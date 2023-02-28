@@ -1,8 +1,9 @@
 import Head from "next/head";
 import DrugPageQuery from "./DrugPage.gql";
 import client from "../../client";
+import DrugPage from "../../src/pages/drug/DrugPage";
 
-export default function DP({ data }) {
+export default function DrugPageContainer({ data }) {
   const {
     drug: { name, id, description },
   } = data;
@@ -14,7 +15,12 @@ export default function DP({ data }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={description} />
       </Head>
-      Drug page {name} {id}
+
+      {/* drug page goes here */}
+      <DrugPage 
+        chemblId={id}
+      />
+
     </div>
   );
 }

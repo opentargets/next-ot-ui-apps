@@ -8,16 +8,16 @@ import {
   appTitle,
   // appDescription,
   // appCanonicalUrl,
-  externalLinks,
+  // externalLinks,
   mainMenuItems,
 } from '../constants';
 
-const BasePage = ({ title, children, description, location }) => {
-  console.log(title);
-  console.log(children);
-  console.log(description);
-  console.log(location);
-  const composedTitle = `${title ? title + ' | ' : ''} ${appTitle}`;
+const BasePage = ({ children }) => {
+  // console.log(title);
+  console.log('children ',children);
+  // console.log(description);
+  // console.log(location);
+  // const composedTitle = `${title ? title + ' | ' : ''} ${appTitle}`;
 
   return (
     <Page

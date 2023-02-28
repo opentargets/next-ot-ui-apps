@@ -20,6 +20,8 @@
     "graphql-tag": "^2.12.6",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "5.1.2",
+    "ui": "*"
   }
 }
