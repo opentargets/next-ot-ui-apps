@@ -1,7 +1,7 @@
 import Head from "next/head";
 import DrugPageQuery from "./DrugPage.gql";
 import client from "../../client";
-import DrugPage from "../../src/pages/drug/DrugPage";
+import DrugPage from "../../src/pages/DrugPage/DrugPage";
 
 export default function DrugPageContainer({ data }) {
   const {

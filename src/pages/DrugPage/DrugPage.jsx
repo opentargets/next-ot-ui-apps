@@ -5,10 +5,10 @@ import BasePage from '../../components/BasePage';
 // import ScrollToTop from '../../components/ScrollToTop';
 import Header from './Header';
 import NotFoundPage from '../NotFoundPage';
-import { RoutingTab, RoutingTabs } from '../../components/RoutingTabs';
+// import { RoutingTab, RoutingTabs } from '../../components/RoutingTabs';
 import DRUG_PAGE_QUERY from './DrugPage.gql';
 
-// const Profile = lazy(() => import('../DrugPage/Profile'));
+const Profile = lazy(() => import('./Profile'));
 
 // Props
 // now only need chemblId:
@@ -51,6 +51,7 @@ function DrugPage({ chemblId }) {
               component={() => <Profile chemblId={chemblId} name={name} />}
             />
           </RoutingTabs> */}
+          <Profile chemblId={chemblId} name={name} />
         </BasePage>
 
   )
